@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import AperturaSection from '@/components/nosotros/AperturaSection'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Nosotros',
   description: 'Conozca al equipo de Imperium Iuris — firma jurídica de defensa penal estratégica en Guayaquil. Experiencia, metodología y compromiso con cada caso.',
-  alternates: { canonical: 'https://www.imperiumiuris.law/nosotros' },
+  alternates: { canonical: `${SITE_URL}/nosotros` },
   openGraph: {
     title: 'Nosotros | Imperium Iuris',
     description: 'Equipo de abogados penalistas con experiencia en casos complejos en Ecuador.',
-    url: 'https://www.imperiumiuris.law/nosotros',
+    url: `${SITE_URL}/nosotros`,
   },
 }
 import FilosofiaSection from '@/components/nosotros/FilosofiaSection'

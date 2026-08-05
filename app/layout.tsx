@@ -10,6 +10,7 @@ import { getSiteConfig } from '@/lib/config'
 import { getUser } from '@/lib/supabase-server'
 import { isAdminUser } from '@/lib/admin-auth'
 import { BRAND } from '@/lib/constants'
+import { SITE_URL } from '@/lib/site'
 
 const DAYS_EN = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
 
@@ -75,7 +76,7 @@ const cormorantGaramond = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.imperiumiuris.law'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: `${BRAND.name} | ${BRAND.tagline}`,
     template: `%s | ${BRAND.name}`,
@@ -88,7 +89,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${BRAND.name} | ${BRAND.tagline}`,
     description: 'Defensa penal estratégica para escenarios complejos. Protegemos su libertad, patrimonio y reputación.',
-    url: 'https://www.imperiumiuris.law',
+    url: SITE_URL,
     siteName: BRAND.name,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: `${BRAND.name} — Defensa Penal Estratégica` }],
     locale: 'es_EC',
@@ -100,7 +101,7 @@ export const metadata: Metadata = {
     description: 'Defensa penal estratégica en Guayaquil, Ecuador.',
     images: ['/og-image.jpg'],
   },
-  alternates: { canonical: 'https://www.imperiumiuris.law' },
+  alternates: { canonical: SITE_URL },
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -126,7 +127,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
               '@type': 'LegalService',
               name: 'Imperium Iuris',
               description: 'Firma jurídica de defensa penal estratégica en Guayaquil, Ecuador.',
-              url: 'https://www.imperiumiuris.law',
+              url: SITE_URL,
               telephone: contacto.whatsapp,
               email: contacto.correo,
               address: {

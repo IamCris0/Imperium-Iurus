@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Términos y Condiciones | Imperium Iuris',
   description: 'Términos y condiciones de uso del portal y servicios jurídicos de Imperium Iuris.',
-  alternates: { canonical: 'https://www.imperiumiuris.law/legal/terminos' },
+  alternates: { canonical: `${SITE_URL}/legal/terminos` },
 }
 
 const LAST_UPDATED = '30 de junio de 2026'

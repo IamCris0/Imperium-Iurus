@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad | Imperium Iuris',
   description:
     'Política de privacidad de Imperium Iuris conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador (LOPDP).',
-  alternates: { canonical: 'https://www.imperiumiuris.law/legal/privacidad' },
+  alternates: { canonical: `${SITE_URL}/legal/privacidad` },
 }
 
 const LAST_UPDATED = '30 de junio de 2026'

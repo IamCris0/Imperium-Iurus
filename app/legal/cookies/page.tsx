@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Política de Cookies | Imperium Iuris',
   description:
     'Política de cookies de Imperium Iuris: qué cookies utilizamos, para qué y cómo gestionarlas.',
-  alternates: { canonical: 'https://www.imperiumiuris.law/legal/cookies' },
+  alternates: { canonical: `${SITE_URL}/legal/cookies` },
 }
 
 const LAST_UPDATED = '30 de junio de 2026'

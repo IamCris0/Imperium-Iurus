@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Button from '@/components/ui/Button'
 import { supabase } from '@/lib/supabase'
 import { sanitizeBlogHtml } from '@/lib/sanitize'
+import { SITE_URL } from '@/lib/site'
 
 export const dynamic = 'force-dynamic'
 
@@ -23,11 +24,11 @@ export async function generateMetadata(
   return {
     title: data.titulo,
     description: data.resumen ?? `${data.categoria} — Imperium Iuris`,
-    alternates: { canonical: `https://www.imperiumiuris.law/blog/${data.slug}` },
+    alternates: { canonical: `${SITE_URL}/blog/${data.slug}` },
     openGraph: {
       title: data.titulo,
       description: data.resumen ?? undefined,
-      url: `https://www.imperiumiuris.law/blog/${data.slug}`,
+      url: `${SITE_URL}/blog/${data.slug}`,
       type: 'article',
     },
   }
