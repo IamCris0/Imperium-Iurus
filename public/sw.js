@@ -13,8 +13,8 @@ self.addEventListener('push', (event) => {
   event.waitUntil(
     self.registration.showNotification(title, {
       body,
-      icon: '/logo-imperium.png',
-      badge: '/logo-imperium.png',
+      icon: '/logo_sinletras.jpeg',
+      badge: '/logo_sinletras.jpeg',
       data: { url },
     }),
   )

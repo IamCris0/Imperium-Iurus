@@ -29,7 +29,7 @@ export default function Footer() {
         <div>
           <div className="mb-5 flex items-center gap-3">
             <Image
-              src="/logo-imperium.png"
+              src="/logo_sinletras.jpeg"
               alt="Logo Imperium Iuris"
               width={58}
               height={53}

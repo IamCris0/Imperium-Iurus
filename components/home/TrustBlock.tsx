@@ -8,6 +8,16 @@ import { useSiteConfig, useUpdateConfig } from '@/components/providers/ConfigPro
 import EditableSection from '@/components/admin/EditableSection'
 import SectionEditModal from '@/components/admin/SectionEditModal'
 import { Field, Input, Textarea } from '@/components/admin/ConfigFormControls'
+import Highlight from '@/components/ui/Highlight'
+
+const BODY_HIGHLIGHTS: string[][] = [
+  ['investigaciones penales complejas'],
+  [],
+  ['reputación'],
+  [],
+  [],
+  [],
+]
 
 export default function TrustBlock() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -40,7 +50,9 @@ export default function TrustBlock() {
               >
                 <Icon className="mb-5 text-gold" size={32} aria-hidden="true" />
                 <h3 className="font-cinzel text-lg font-semibold tracking-wide text-text-light">{title}</h3>
-                <p className="mt-4 font-inter text-sm font-light leading-7 text-text-muted">{body}</p>
+                <p className="mt-4 font-inter text-sm font-light leading-7 text-text-muted">
+                  <Highlight text={body} phrases={BODY_HIGHLIGHTS[index] ?? []} className="font-semibold text-text-light" />
+                </p>
                 <p className="mt-5 border-t border-border pt-4 font-inter text-xs font-medium uppercase tracking-widest text-gold">{sub}</p>
               </m.article>
             )

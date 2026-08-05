@@ -107,7 +107,7 @@ export default function ContactoPage() {
   )
 
   return (
-    <main className="relative bg-[#F5F3EE] px-4 pb-24 pt-60 sm:px-6 lg:px-8">
+    <main className="relative bg-stone px-4 pb-24 pt-60 sm:px-6 lg:px-8">
       <div className="absolute inset-x-0 top-0 h-32 bg-primary -z-10" />
       <div className="mx-auto max-w-7xl">
         <EditableSection onEdit={() => setHeaderModalOpen(true)} topSafe>
@@ -125,7 +125,7 @@ export default function ContactoPage() {
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           {/* ─── Formulario — fondo marfil ─── */}
-          <form onSubmit={onSubmit} className="border border-gold/20 bg-[#F5F3EE] p-6 md:p-8">
+          <form onSubmit={onSubmit} className="border border-primary/20 bg-stone p-6 md:p-8">
             <div className="grid gap-5 md:grid-cols-2">
               <Field label="Nombre completo" error={errors.nombre?.message}>
                 <input {...register('nombre')} className="input-light" placeholder=" " />
@@ -188,7 +188,7 @@ export default function ContactoPage() {
           {/* ─── Aside — fondo marfil ─── */}
           <aside className="space-y-6">
             <ContactInfoBlock />
-            <div className="overflow-hidden border border-gold/20 bg-[#F5F3EE]">
+            <div className="overflow-hidden border border-primary/20 bg-stone">
               <iframe
                 title="Mapa Guayaquil Imperium Iuris"
                 src={mapUrl}

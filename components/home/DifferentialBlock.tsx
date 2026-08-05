@@ -52,12 +52,12 @@ export default function DifferentialBlock() {
   return (
     <>
     <EditableSection onEdit={() => setTextModalOpen(true)} label="Editar textos">
-    <section className="relative overflow-hidden bg-text-light px-4 py-24 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-stone px-4 py-24 sm:px-6 lg:px-8">
       {/* IMG4 como textura de fondo de sección con overlay claro */}
       <div className="absolute inset-0 -z-20">
         <Image src="/IMG4.jpeg" alt="" fill sizes="100vw" className="object-cover" quality={60} loading="lazy" />
       </div>
-      <div className="absolute inset-0 -z-10 bg-text-light/92" />
+      <div className="absolute inset-0 -z-10 bg-stone/92" />
 
       <div className="mx-auto max-w-7xl">
         <SectionHeader
@@ -74,7 +74,7 @@ export default function DifferentialBlock() {
             type="button"
             onClick={prev}
             aria-label="Anterior"
-            className="absolute left-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-gold/60 bg-white text-gold transition-colors hover:border-gold hover:bg-gold/10"
+            className="absolute left-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-gold/60 bg-stone-light text-gold transition-colors hover:border-gold hover:bg-gold/10"
           >
             <ChevronLeft size={20} aria-hidden="true" />
           </button>
@@ -84,7 +84,7 @@ export default function DifferentialBlock() {
             type="button"
             onClick={next}
             aria-label="Siguiente"
-            className="absolute right-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-gold/60 bg-white text-gold transition-colors hover:border-gold hover:bg-gold/10"
+            className="absolute right-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center border border-gold/60 bg-stone-light text-gold transition-colors hover:border-gold hover:bg-gold/10"
           >
             <ChevronRight size={20} aria-hidden="true" />
           </button>
@@ -100,7 +100,7 @@ export default function DifferentialBlock() {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.35, ease: 'easeInOut' }}
-                className="relative min-h-[280px] overflow-hidden border border-primary/15 bg-white p-8 md:p-14"
+                className="relative min-h-[280px] overflow-hidden border border-primary/15 bg-stone-light p-8 md:p-14"
               >
                 {/* Imagen de fondo del slide actual */}
                 <Image
@@ -111,7 +111,7 @@ export default function DifferentialBlock() {
                   className="object-cover opacity-10"
                   priority={current === 0}
                 />
-                <div className="absolute inset-0 bg-white/88" />
+                <div className="absolute inset-0 bg-stone-light/88" />
 
                 <div className="relative z-10">
                   <div className="mb-6 flex h-14 w-14 items-center justify-center border border-gold bg-primary text-gold">

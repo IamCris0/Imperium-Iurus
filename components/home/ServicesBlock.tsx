@@ -24,7 +24,7 @@ export default function ServicesBlock({ bottomButton = false }: { bottomButton?:
   return (
     <>
     <EditableSection onEdit={() => setTextModalOpen(true)} label="Editar textos" bottomButton={bottomButton}>
-    <section className="bg-text-light px-4 py-24 sm:px-6 lg:px-8">
+    <section className="bg-stone px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow={services_block.eyebrow}
@@ -52,7 +52,7 @@ export default function ServicesBlock({ bottomButton = false }: { bottomButton?:
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover opacity-15"
                 />
-                <div className="absolute inset-0 bg-white/82" />
+                <div className="absolute inset-0 bg-stone-light/90" />
 
                 {/* Contenido */}
                 <div className="relative z-10">

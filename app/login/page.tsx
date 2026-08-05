@@ -129,7 +129,7 @@ export default function LoginClientePage() {
         <div className="w-full max-w-sm">
           <div className="mb-8 text-center">
             <Image
-              src="/logo-imperium.png"
+              src="/logo_sinletras.jpeg"
               alt="Logo de Imperium Iuris"
               width={80}
               height={72}
@@ -214,7 +214,7 @@ export default function LoginClientePage() {
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
           <Image
-            src="/logo-imperium.png"
+            src="/logo_sinletras.jpeg"
             alt="Logo de Imperium Iuris"
             width={80}
             height={72}

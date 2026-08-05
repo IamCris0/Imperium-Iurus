@@ -16,7 +16,7 @@ export default function MetodologiaSection() {
   return (
     <>
     <EditableSection onEdit={() => setModalOpen(true)}>
-    <section className="relative overflow-hidden bg-[#F5F3EE] px-4 py-24 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-stone px-4 py-24 sm:px-6 lg:px-8">
 
       {/* ─── Isotipo águila — marca de agua ───── */}
       <div
@@ -45,8 +45,8 @@ export default function MetodologiaSection() {
             {metodologia_block.pasos.map(({ titulo, texto }, index) => (
               <Reveal key={titulo} delay={index * 0.06}>
                 <article className={`relative grid gap-4 md:grid-cols-2 ${index % 2 === 0 ? '' : 'md:text-right'}`}>
-                  <div className={`${index % 2 === 0 ? 'md:col-start-2' : ''} ml-14 border border-gold/25 bg-white p-6 shadow-sm md:ml-0`}>
-                    <span className="absolute left-3 top-6 flex h-5 w-5 items-center justify-center rounded-full border border-gold bg-[#F5F3EE] md:left-1/2 md:-ml-2.5" />
+                  <div className={`${index % 2 === 0 ? 'md:col-start-2' : ''} ml-14 border border-primary/20 bg-stone-light p-6 shadow-sm md:ml-0`}>
+                    <span className="absolute left-3 top-6 flex h-5 w-5 items-center justify-center rounded-full border border-gold bg-stone-light md:left-1/2 md:-ml-2.5" />
                     <p className="font-cinzel text-xs font-semibold uppercase tracking-[0.25em] text-gold">
                       Paso {index + 1}
                     </p>

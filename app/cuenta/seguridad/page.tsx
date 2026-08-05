@@ -156,7 +156,7 @@ export default function SeguridadPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <Image
-            src="/logo-imperium.png"
+            src="/logo_sinletras.jpeg"
             alt="Logo de Imperium Iuris"
             width={80}
             height={72}

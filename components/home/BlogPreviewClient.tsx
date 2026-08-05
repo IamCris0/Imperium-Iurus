@@ -28,7 +28,7 @@ export default function BlogPreviewClient({ articulos }: { articulos: ArticuloPr
   return (
     <>
       <EditableSection onEdit={() => setModalOpen(true)}>
-        <section className="bg-text-light px-4 py-24 sm:px-6 lg:px-8">
+        <section className="bg-stone px-4 py-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <SectionHeader
               eyebrow={blog_preview.eyebrow}
@@ -39,7 +39,7 @@ export default function BlogPreviewClient({ articulos }: { articulos: ArticuloPr
             <div className="grid gap-6 md:grid-cols-3">
               {articulos.map((art, index) => (
                 <Reveal key={art.slug} delay={index * 0.08}>
-                  <article className="h-full border border-primary/15 bg-white p-7 transition-colors hover:border-gold">
+                  <article className="h-full border border-primary/15 bg-stone-light p-7 transition-colors hover:border-gold">
                     <p className="font-inter text-xs font-medium uppercase tracking-[0.25em] text-gold">
                       {art.categoria} · {art.tiempo_lectura}
                     </p>

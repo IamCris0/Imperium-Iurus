@@ -16,7 +16,7 @@ export default function EquipoSection() {
   return (
     <>
     <EditableSection onEdit={() => setModalOpen(true)}>
-    <section className="bg-text-light px-4 py-24 sm:px-6 lg:px-8">
+    <section className="bg-stone px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           title={equipo_block.titulo}
@@ -26,7 +26,7 @@ export default function EquipoSection() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {equipo_block.especialistas.map((name, index) => (
             <Reveal key={name} delay={index * 0.04}>
-              <article className="border border-primary/15 bg-white p-6 text-center transition-colors hover:border-gold">
+              <article className="border border-primary/15 bg-stone-light p-6 text-center transition-colors hover:border-gold">
                 <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-gold/60 bg-primary text-gold">
                   <UserRound size={28} aria-hidden="true" />
                 </div>

@@ -29,10 +29,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl transition-all duration-500 ${
-        scrolled
-          ? 'border-gold/30 bg-[#0D1624]/97 shadow-xl shadow-black/40'
-          : 'border-white/10 bg-[#0D1624]/40'
+      className={`fixed inset-x-0 top-0 z-50 border-b border-gold/20 bg-secondary transition-shadow duration-500 ${
+        scrolled ? 'shadow-xl shadow-black/40' : ''
       }`}
     >
       <nav
@@ -43,7 +41,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="focus-gold flex min-w-0 items-center gap-3" aria-label="Inicio Imperium Iuris">
           <Image
-            src="/logo-imperium.png"
+            src="/logo_sinletras.jpeg"
             alt="Logo dorado de Imperium Iuris"
             width={72}
             height={65}
@@ -92,7 +90,7 @@ export default function Navbar() {
 
       {/* Menú móvil */}
       {open ? (
-        <div className="border-t border-border bg-[#0D1624]/98 px-6 pb-8 pt-3 backdrop-blur-xl md:hidden">
+        <div className="border-t border-border bg-secondary px-6 pb-8 pt-3 md:hidden">
           <div className="flex flex-col gap-1">
             {NAV_LINKS.map((link) => (
               <Link

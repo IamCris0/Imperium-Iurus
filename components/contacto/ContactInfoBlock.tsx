@@ -95,7 +95,7 @@ export default function ContactInfoBlock() {
   return (
     <>
       <EditableSection onEdit={() => setModalOpen(true)}>
-        <div className="border border-gold/20 bg-[#F5F3EE] p-7">
+        <div className="border border-primary/20 bg-stone p-7">
           <h2 className="font-cinzel text-2xl font-semibold text-gold">Información de contacto</h2>
           <div className="mt-6 space-y-4 text-sm font-light text-primary/70">
             <Info icon={MapPin} text={contacto.direccion} />
@@ -111,7 +111,7 @@ export default function ContactInfoBlock() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-gold/40 px-4 py-2 text-xs uppercase tracking-widest text-gold transition-colors hover:border-gold hover:bg-gold hover:text-primary"
+                  className="border border-gold bg-primary px-4 py-2 text-xs uppercase tracking-widest text-gold transition-colors hover:bg-gold hover:text-primary"
                 >
                   {label}
                 </a>

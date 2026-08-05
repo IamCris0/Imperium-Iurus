@@ -5,6 +5,7 @@ import { useSiteConfig, useUpdateConfig } from '@/components/providers/ConfigPro
 import EditableSection from '@/components/admin/EditableSection'
 import SectionEditModal from '@/components/admin/SectionEditModal'
 import { Field, Input, Textarea } from '@/components/admin/ConfigFormControls'
+import Highlight from '@/components/ui/Highlight'
 
 export default function AperturaSection() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -22,13 +23,25 @@ export default function AperturaSection() {
           {nosotros_page.titulo}
         </h1>
         <p className="mx-auto mt-7 max-w-3xl text-lg font-light leading-8 text-text-muted">
-          {nosotros_page.intro}
+          <Highlight
+            text={nosotros_page.intro}
+            phrases={['libertad', 'el patrimonio', 'la reputación', 'la continuidad empresarial']}
+            className="font-semibold text-text-light"
+          />
         </p>
         <p className="mx-auto mt-8 max-w-4xl text-base font-light leading-8 text-text-light">
-          {nosotros_page.descripcion}
+          <Highlight
+            text={nosotros_page.descripcion}
+            phrases={['derecho penal estratégico']}
+            className="font-semibold text-gold"
+          />
         </p>
         <p className="mx-auto mt-4 max-w-4xl text-base font-light leading-8 text-text-muted">
-          {nosotros_page.tagline}
+          <Highlight
+            text={nosotros_page.tagline}
+            phrases={['respuesta inmediata']}
+            className="font-semibold text-text-light"
+          />
         </p>
       </div>
     </section>

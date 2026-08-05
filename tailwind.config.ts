@@ -19,6 +19,10 @@ const config: Config = {
         'text-light': '#F5F3EE', // Marfil
         'text-muted': '#A7AFB7', // Gris Ejecutivo
 
+        // Bloques claros (alternancia con secciones azules)
+        stone:         '#C9C1AE', // Piedra Cálida — fondo de sección clara
+        'stone-light': '#DDD7C8', // variante clara — tarjetas dentro de bloques piedra
+
         // Estructura
         border: '#2B3445', // Líneas divisorias
       },

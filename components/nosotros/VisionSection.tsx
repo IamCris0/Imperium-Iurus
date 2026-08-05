@@ -14,7 +14,7 @@ export default function VisionSection() {
   return (
     <>
     <EditableSection onEdit={() => setModalOpen(true)}>
-    <section className="bg-[#F5F3EE] px-4 py-24 text-center sm:px-6 lg:px-8">
+    <section className="bg-stone px-4 py-24 text-center sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl">
         <SectionHeader title={nosotros_page.vision_titulo} invert />
         <p className="text-lg font-light leading-8 text-primary/70">

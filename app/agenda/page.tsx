@@ -147,7 +147,7 @@ export default function AgendaPage() {
   })
 
   return (
-    <main className="relative bg-[#F5F3EE] px-4 pb-24 pt-60 sm:px-6 lg:px-8">
+    <main className="relative bg-stone px-4 pb-24 pt-60 sm:px-6 lg:px-8">
       <div className="absolute inset-x-0 top-0 h-32 bg-primary -z-10" />
       <div className="mx-auto max-w-4xl">
         <EditableSection onEdit={() => setHeaderModalOpen(true)} topSafe>
@@ -161,7 +161,7 @@ export default function AgendaPage() {
 
         <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
           {/* ─── Formulario ─── */}
-          <form onSubmit={onSubmit} className="border border-gold/20 bg-[#F5F3EE] p-6 md:p-8">
+          <form onSubmit={onSubmit} className="border border-primary/20 bg-stone p-6 md:p-8">
 
             {sent ? (
               <div className="border border-gold/50 bg-gold/10 p-6 text-center">
@@ -258,7 +258,7 @@ export default function AgendaPage() {
           {/* ─── Sidebar informativo ─── */}
           <EditableSection onEdit={() => setSidebarModalOpen(true)}>
           <aside className="space-y-5">
-            <div className="border border-gold/20 bg-[#F5F3EE] p-6">
+            <div className="border border-primary/20 bg-stone p-6">
               <h2 className="font-cinzel text-lg font-semibold text-gold">{agenda_page.horario_titulo}</h2>
               <div className="mt-4 space-y-2 text-sm font-light text-primary/70">
                 <p className="flex items-center gap-2">
@@ -270,7 +270,7 @@ export default function AgendaPage() {
                   {agenda_page.horario_texto2}
                 </p>
               </div>
-              <div className="mt-5 border-t border-gold/20 pt-5">
+              <div className="mt-5 border-t border-primary/20 pt-5">
                 <p className="text-xs font-light leading-relaxed text-primary/60">
                   {agenda_page.urgencia_texto}
                 </p>
@@ -285,12 +285,12 @@ export default function AgendaPage() {
               </div>
             </div>
 
-            <div className="border border-gold/20 bg-[#F5F3EE] p-6">
+            <div className="border border-primary/20 bg-stone p-6">
               <h2 className="font-cinzel text-lg font-semibold text-gold">{agenda_page.pasos_titulo}</h2>
               <ol className="mt-4 space-y-3 text-sm font-light text-primary/70">
                 {agenda_page.pasos.map((step, i) => (
                   <li key={step} className="flex gap-3">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center border border-gold/40 font-cinzel text-[10px] text-gold">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center border border-gold bg-primary font-cinzel text-[10px] text-gold">
                       {i + 1}
                     </span>
                     {step}
