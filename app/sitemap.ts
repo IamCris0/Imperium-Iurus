@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { supabase } from '@/lib/supabase'
 
-const BASE = 'https://imperiumiuris.ec'
+const BASE = 'https://www.imperiumiuris.law'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Artículos publicados del blog

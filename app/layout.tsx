@@ -75,7 +75,7 @@ const cormorantGaramond = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://imperiumiuris.ec'),
+  metadataBase: new URL('https://www.imperiumiuris.law'),
   title: {
     default: `${BRAND.name} | ${BRAND.tagline}`,
     template: `%s | ${BRAND.name}`,
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${BRAND.name} | ${BRAND.tagline}`,
     description: 'Defensa penal estratégica para escenarios complejos. Protegemos su libertad, patrimonio y reputación.',
-    url: 'https://imperiumiuris.ec',
+    url: 'https://www.imperiumiuris.law',
     siteName: BRAND.name,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: `${BRAND.name} — Defensa Penal Estratégica` }],
     locale: 'es_EC',
@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     description: 'Defensa penal estratégica en Guayaquil, Ecuador.',
     images: ['/og-image.jpg'],
   },
-  alternates: { canonical: 'https://imperiumiuris.ec' },
+  alternates: { canonical: 'https://www.imperiumiuris.law' },
 }
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -126,7 +126,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
               '@type': 'LegalService',
               name: 'Imperium Iuris',
               description: 'Firma jurídica de defensa penal estratégica en Guayaquil, Ecuador.',
-              url: 'https://imperiumiuris.ec',
+              url: 'https://www.imperiumiuris.law',
               telephone: contacto.whatsapp,
               email: contacto.correo,
               address: {

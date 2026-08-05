@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Términos y Condiciones | Imperium Iuris',
   description: 'Términos y condiciones de uso del portal y servicios jurídicos de Imperium Iuris.',
-  alternates: { canonical: 'https://imperiumiuris.ec/legal/terminos' },
+  alternates: { canonical: 'https://www.imperiumiuris.law/legal/terminos' },
 }
 
 const LAST_UPDATED = '30 de junio de 2026'
@@ -14,7 +14,7 @@ const sections = [
     id: 'objeto',
     title: 'I. Objeto y Ámbito de Aplicación',
     content: [
-      'Los presentes Términos y Condiciones (en adelante, «los Términos») regulan el acceso y uso del sitio web imperiumiuris.ec y del portal de cliente de IMPERIUM IURIS (en adelante, «el Portal»), operado por el Estudio Jurídico Imperium Iuris, con sede en Guayaquil, Ecuador.',
+      'Los presentes Términos y Condiciones (en adelante, «los Términos») regulan el acceso y uso del sitio web imperiumiuris.law y del portal de cliente de IMPERIUM IURIS (en adelante, «el Portal»), operado por el Estudio Jurídico Imperium Iuris, con sede en Guayaquil, Ecuador.',
       'El acceso al Portal implica la aceptación plena y sin reservas de los presentes Términos. Si no está de acuerdo con alguna de sus disposiciones, deberá abstenerse de utilizar el Portal.',
       'Estos Términos se aplican a todos los usuarios del Portal, incluyendo visitantes, clientes registrados y cualquier persona que acceda a los contenidos o servicios disponibles.',
     ],

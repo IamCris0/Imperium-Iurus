@@ -23,11 +23,11 @@ export async function generateMetadata(
   return {
     title: data.titulo,
     description: data.resumen ?? `${data.categoria} — Imperium Iuris`,
-    alternates: { canonical: `https://imperiumiuris.ec/blog/${data.slug}` },
+    alternates: { canonical: `https://www.imperiumiuris.law/blog/${data.slug}` },
     openGraph: {
       title: data.titulo,
       description: data.resumen ?? undefined,
-      url: `https://imperiumiuris.ec/blog/${data.slug}`,
+      url: `https://www.imperiumiuris.law/blog/${data.slug}`,
       type: 'article',
     },
   }

@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://imperiumiuris.ec/sitemap.xml',
-    host: 'https://imperiumiuris.ec',
+    sitemap: 'https://www.imperiumiuris.law/sitemap.xml',
+    host: 'https://www.imperiumiuris.law',
   }
 }

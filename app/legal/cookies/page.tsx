@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Política de Cookies | Imperium Iuris',
   description:
     'Política de cookies de Imperium Iuris: qué cookies utilizamos, para qué y cómo gestionarlas.',
-  alternates: { canonical: 'https://imperiumiuris.ec/legal/cookies' },
+  alternates: { canonical: 'https://www.imperiumiuris.law/legal/cookies' },
 }
 
 const LAST_UPDATED = '30 de junio de 2026'
@@ -46,7 +46,7 @@ const cookieTable = [
     cookies: [
       {
         nombre: 'pending_agenda / pending_contacto',
-        proveedor: 'imperiumiuris.ec',
+        proveedor: 'imperiumiuris.law',
         finalidad: 'Almacena temporalmente los datos del formulario mientras el usuario completa el proceso de autenticación con Google para evitar que tenga que volver a rellenarlos.',
         duracion: 'Sesión (sessionStorage — eliminada al cerrar la pestaña)',
         tipo: 'sessionStorage',

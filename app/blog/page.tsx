@@ -7,11 +7,11 @@ import { supabase } from '@/lib/supabase'
 export const metadata: Metadata = {
   title: 'Blog Jurídico',
   description: 'Artículos de derecho penal ecuatoriano — guías prácticas para actuar ante una detención, investigación fiscal o riesgo empresarial.',
-  alternates: { canonical: 'https://imperiumiuris.ec/blog' },
+  alternates: { canonical: 'https://www.imperiumiuris.law/blog' },
   openGraph: {
     title: 'Blog Jurídico | Imperium Iuris',
     description: 'Contenido jurídico de autoridad para decisiones urgentes en Ecuador.',
-    url: 'https://imperiumiuris.ec/blog',
+    url: 'https://www.imperiumiuris.law/blog',
   },
 }
 
