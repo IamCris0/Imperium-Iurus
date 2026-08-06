@@ -145,14 +145,14 @@ export async function POST(request: NextRequest): Promise<NextResponse<ApiRespon
 
   const [notif, confirm] = await Promise.allSettled([
     resend.emails.send({
-      from:    'Imperium Iuris <onboarding@resend.dev>',
+      from:    `Imperium Iuris <${process.env.RESEND_FROM_EMAIL}>`,
       to:      toEmail,
       subject: `[${data.tipoConsulta === 'urgencia' ? 'URGENTE' : 'Nueva consulta'}] ${TIPO_LABEL[data.tipoConsulta]} — ${data.nombre}`,
       html:    emailAbogado(data),
       replyTo: data.correo,
     }),
     resend.emails.send({
-      from:    'Imperium Iuris <onboarding@resend.dev>',
+      from:    `Imperium Iuris <${process.env.RESEND_FROM_EMAIL}>`,
       to:      data.correo,
       subject: 'Hemos recibido su consulta — Imperium Iuris',
       html:    emailCliente(data),
